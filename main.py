@@ -23,7 +23,6 @@ def main():
         if not submission.over_18 and (submission.score >= 20000):
             if submission.id not in posts:
                 print(submission.score)
-                """
                 embed = DiscordEmbed(title=submission.title, color=0xf9013f)
                 embed.set_author(name=submission.author.name, url='https://reddit.com' + submission.permalink, icon_url=submission.author.icon_img)
                 embed.set_image(url=submission.url)
@@ -31,7 +30,6 @@ def main():
 
                 webhook.add_embed(embed)
                 webhook.execute()
-                """
                 posts[submission.id] = time.time()
 
 
