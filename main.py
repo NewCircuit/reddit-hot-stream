@@ -8,8 +8,7 @@ conf.read('conf.ini')
 
 reddit = praw.Reddit(client_id=conf.get('reddit', 'client_id'),
                      client_secret=conf.get('reddit', 'client_secret'),
-                     username=conf.get('reddit', 'username'),
-                     password=conf.get('reddit', 'password'),
+                     refresh_token=conf.get('reddit', 'refresh_token'),
                      user_agent=conf.get('reddit', 'user_agent'))
 
 posts = {}
