@@ -6,7 +6,7 @@ This script posts every post in hot that gets above 15k upvotes in a discord cha
 
 Clone the repo
 ```sh
-git clone https://github.com/Floor-Gang/reddit-hot-stream.git
+git clone https://github.com/NewCircuit/reddit-hot-stream.git
 ```
 Install the requirements
 ```sh
