@@ -24,4 +24,3 @@ Run the script
 ```sh
 nohup python3 main.py &
 ```
-
