@@ -35,9 +35,9 @@ def main():
 if __name__ == '__main__':
     while True:
         main()
-        day_from_now = time.time() - 60 * 60 * 24
+        _3_days_from_now = time.time() - 60 * 60 * 48
         for submission_id, timestamp in posts.copy().items():
-            if timestamp < day_from_now:  # Check if submission is one day old
+            if timestamp < _3_days_from_now:  # Check if submission is three days old
                 posts.pop(submission_id)
 
         time.sleep(60 * 60)  # Run every hour
